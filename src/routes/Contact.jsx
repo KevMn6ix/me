@@ -5,8 +5,8 @@ import Form from '../components/Form';
 function Contact() {
   return (
     <div>
-      <HeroImg2 heading="CONTACTS ME" text="Let's have a chat"/>
-      <Form />
+      <HeroImg2 heading="CONTACTS ME" text="Let's have a chat" contactMail="muntokevin@gmail.com"/>
+      {/*<Form />*/}
     </div>
   )
 }

@@ -25,7 +25,7 @@ function Footer () {
                             <FaRegCopyright size={15} style={{color: "#fff", marginTop: "1rem",marginRight: "0.3rem"}}/>
                         </Link>
                     </div>
-                    <p>Kevin Munto 2023</p>
+                    <p>Kevin Munto 2024</p>
                 </div>
                 
             </div>

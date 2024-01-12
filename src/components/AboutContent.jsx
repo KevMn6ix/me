@@ -3,8 +3,12 @@ import React from 'react'
 import "../styles/AboutContent.css"
 import { Link } from 'react-router-dom'
 import Kevin from "../assets/kevinm.jpg"
+import { FaPython,FaJs,FaJava, FaReact, FaGitAlt, FaDatabase  } from 'react-icons/fa'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 function AboutContent()  {
+    const SIZE = 50;
+    /*
     const cv = () => {
         const cvUrl = "../assets/MuntoKevinCV.pdf";
         const link = document.createElement("a");
@@ -13,7 +17,7 @@ function AboutContent()  {
         document.body.appendChild(link);
         link.click();
         document.body.removeChild(link);  
-    };
+    };*/
 
     return (
         <div className="about">
@@ -25,27 +29,34 @@ function AboutContent()  {
                     In parallel to my studies, I have several passions which allow me to 
                     stimulate myself such as football, gym and video games.
                 </p>
+                {/*<h2>Programming Languages : </h2>
+                <div className="stack">
+                    aaaa
+                    <FaPython size={SIZE} style={{color: "#fff"}} />
+                    <FontAwesomeIcon icon="fa-solid fa-c" size={SIZE} style={{color: "#fff"}}/>
+                    <FaJava size={SIZE} style={{color: "#fff"}} />
+                </div>*/}
                 <Link to="/contact/">
                     <button className='btn'>Contact</button>
                 </Link>
 
-                {/*<Link to="../assets/MuntoKevinCV.pdf" target='_blank' download >
+                {<Link to="../assets/MuntoKevinCV.pdf" target='_blank' download= "MuntoKevinCV.pdf">
                     <button className='btn' >Download My Cv</button>
-                </Link>*/ }
+                </Link> }
                 
-                <a href="../assets/MuntoKevinCV.pdf" download="MuntoKevinCV.pdf">
+                {/*<a href="../assets/MuntoKevinCV.pdf" download="MuntoKevinCV.pdf">
                     <button className='btn' >Download My Cv</button>
-                </a>
+                </a>*/}
                 
             </div>
-
-            <div className="right">
+            
+            {/*<div className="right">
                 <div className="img-container">
                     <div className='img-stack top'>
                         <img src={Kevin} className='img' alt='kevinm'/>
                     </div>
                 </div>
-            </div>
+            </div>*/}
         </div>
     );
 };

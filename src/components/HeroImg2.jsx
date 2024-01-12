@@ -7,6 +7,7 @@ function HeroImg2 (props) {
         <div className="heading">
             <h1>{props.heading}</h1>
             <p>{props.text}</p>
+            <h1>{props.contactMail}</h1>
         </div>
     </div>
   )
